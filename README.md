@@ -19,8 +19,14 @@ Editar la constante **phone** en *public/assets/scripts/script.js*, con el núme
 const phone = '+99999999';
 ```
 
-Editarlas las constantes **DB_SERVER, DB_USER, DB_PASS, DB_NAME** en *public/api/config/config.php*, con los datos de conexión a la base de datos MySQL
+Editar las constantes **DB_SERVER, DB_USER, DB_PASS, DB_NAME** en *public/api/config/config.php*, con los datos de conexión a la base de datos MySQL
 
+```
+define("DB_SERVER", "");
+define("DB_USER", "");
+define("DB_PASS", "");
+define("DB_NAME", "");
+```
 
 
 ## Construido con 🛠️
