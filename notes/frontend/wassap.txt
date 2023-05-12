@@ -1,0 +1,13 @@
+https://api.whatsapp.com/send?phone=+5491140339747&text=Hola, quería realizar un pedido de este producto.%0ACódigo:%20%0ACantidad:%20
+
+const wasap = document.querySelector('[target="_blank"]')
+
+const code = ''
+
+const url = `https://api.whatsapp.com/send?phone=+5491140339747&text=Hola,%20quería%20realizar%20un%20pedido%20de%20este%20producto.%0ACódigo:${code}%20%0ACantidad:%20`
+
+window.location.href = wasap.href
+
+
+
+Fuente: https://www.lawebdelprogramador.com/foros/HTML/1582628-Salto-de-linea.html

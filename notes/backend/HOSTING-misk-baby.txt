@@ -1,0 +1,13 @@
+ACCESO AL PANEL DE CONTROL cPanel
+
+URL Temporal: https://cronos.servidoraweb.net/cpanel/
+URL Final: https://miskbaby.com.ar/cpanel/
+Usuario: pyoahvic
+Clave: MiskBaby2021
+
+
+CONEXION RAPIDA con Filezilla
+167.250.5.28
+Usuario: pyoahvic
+Clave: MiskBaby2021
+PUERTO:21

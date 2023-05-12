@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+# https://httpd.apache.org/docs/trunk/es/mod/core.html#options
+# Disable Directory Browsing
+Options -Indexes
+</IfModule>

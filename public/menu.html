@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:wght@300;400&display=swap');
+      :root {
+  --ff-base: 'Raleway', sans-serif;
+  --ff-heading: 'Poppins', sans-serif;
+  --line-height: 1.5;
+  --clr-primary: #ADDFDA;
+  --clr-primary-light: #DAF4F1;
+  --clr-primary-lighter: #FBFFFE;
+  --clr-primary-dark: #7BC0B9;
+  --clr-primary-darker: #4D9A92;
+  --clr-secondary: #5A74A5;
+  --clr-accent: #F8CC7B;
+  --clr-neutral: #666666;
+  --clr-neutral-min: white;
+  --clr-neutral-light: #999999;
+  --clr-neutral-dark: #333333;
+  --clr-neutral-max: black;
+}
+
+        .main-nav {
+          font-family: var(--ff-base);
+  position: absolute;
+  background-color: var(--clr-primary);
+  width: 60%;
+  top: 96px;
+  /* left: -60%; */
+  height: 100vh;
+  transition: transform .5s ease-in-out;
+}
+
+/* Show menu in  */
+.visible {
+  transform: translateX(100%);
+}
+
+.menu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 2.25;
+}
+
+.menu {
+  width: 80%;
+  margin-top: 1rem;
+}
+
+.menu__item {
+  padding: .25rem 0;
+}
+
+.menu__item:hover {
+}
+
+.menu__link:hover{
+  color: var(--clr-secondary);
+}
+
+.submenu {
+  margin-right: 1rem;
+  /* display: none; */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition-property: max-height, opacity;
+  transition-duration: 0.5s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+.show-submenu{
+  /* display: block; */
+  max-height: 100%;
+  opacity: 1;
+}
+
+.menu__item {
+  margin-left: 1rem;
+}
+
+.menu__link {
+  color: var(--clr-primary-darker);
+  font-weight: bold;
+}
+
+.fa-chevron-down {
+  font-size: inherit;
+  /* color: var(--clr-secondary); */
+}
+
+.submenu__item {
+  padding-left: 1rem;
+  transition-property: background-color, translateX;
+  transition-duration: 0.4s;
+  transition-delay: 0s;
+  transition-timing-function: ease-in-out;
+}
+
+.submenu__item:hover {
+  background-color: var(--clr-primary-light);
+  /* transform: translateX(1rem); */
+}
+
+.submenu__link {
+  text-decoration: none;
+  color: var(--clr-primary-darker);
+  display: block;
+  font-weight: bold;
+}
+    </style>
+</head>
+<body>
+<nav class="main-nav" id="main-nav"><ul class="menu" id="menu"><li class="menu__item"><a class="menu__link" id="1" href="../../api/controllers/products.php?category=1">Maternidad <i class="fas fa-chevron-down" title="Desplegar categoría"></i></a><ul class="submenu"><li class="submenu__item"><a class="submenu__link" id="1" href="../../api/controllers/products.php?subcategory=1">Almohadones</a></li><li class="submenu__item"><a class="submenu__link" id="2" href="../../api/controllers/products.php?subcategory=2">Bolsos</a></li><li class="submenu__item"><a class="submenu__link" id="3" href="../../api/controllers/products.php?subcategory=3">Fajas</a></li><li class="submenu__item"><a class="submenu__link" id="4" href="../../api/controllers/products.php?subcategory=4">Mochilas</a></li><li class="submenu__item"><a class="submenu__link" id="5" href="../../api/controllers/products.php?subcategory=5">Pezoneras</a></li><li class="submenu__item"><a class="submenu__link" id="6" href="../../api/controllers/products.php?subcategory=6">Protectores Mamarios</a></li></ul></li><li class="menu__item"><a class="menu__link" id="2" href="../../api/controllers/products.php?category=2">Lactancia <i class="fas fa-chevron-down" title="Desplegar categoría"></i></a><ul class="submenu"><li class="submenu__item"><a class="submenu__link" id="7" href="../../api/controllers/products.php?subcategory=7">Chupetes</a></li><li class="submenu__item"><a class="submenu__link" id="8" href="../../api/controllers/products.php?subcategory=8">Esterilizadores</a></li><li class="submenu__item"><a class="submenu__link" id="9" href="../../api/controllers/products.php?subcategory=9">Mamaderas y Accesorios</a></li><li class="submenu__item"><a class="submenu__link" id="10" href="../../api/controllers/products.php?subcategory=10">Mordillos</a></li><li class="submenu__item"><a class="submenu__link" id="11" href="../../api/controllers/products.php?subcategory=11">Otros</a></li><li class="submenu__item"><a class="submenu__link" id="12" href="../../api/controllers/products.php?subcategory=12">Sacaleches</a></li></ul></li><li class="menu__item"><a class="menu__link" id="3" href="../../api/controllers/products.php?category=3">Alimentación <i class="fas fa-chevron-down" title="Desplegar categoría"></i></a><ul class="submenu"><li class="submenu__item"><a class="submenu__link" id="13" href="../../api/controllers/products.php?subcategory=13">Baberos</a></li><li class="submenu__item"><a class="submenu__link" id="14" href="../../api/controllers/products.php?subcategory=14">Cubiertos</a></li><li class="submenu__item"><a class="submenu__link" id="18" href="../../api/controllers/products.php?subcategory=18">Otros</a></li><li class="submenu__item"><a class="submenu__link" id="15" href="../../api/controllers/products.php?subcategory=15">Platos</a></li><li class="submenu__item"><a class="submenu__link" id="16" href="../../api/controllers/products.php?subcategory=16">Sillas de Comer</a></li><li class="submenu__item"><a class="submenu__link" id="17" href="../../api/controllers/products.php?subcategory=17">Vasos</a></li></ul></li><li class="menu__item"><a class="menu__link" id="4" href="../../api/controllers/products.php?category=4">Juegos y Juguetes <i class="fas fa-chevron-down" title="Desplegar categoría"></i></a><ul class="submenu"><li class="submenu__item"><a class="submenu__link" id="19" href="../../api/controllers/products.php?subcategory=19">Deportes y Gimnasios</a></li><li class="submenu__item"><a class="submenu__link" id="20" href="../../api/controllers/products.php?subcategory=20">Educativos</a></li><li class="submenu__item"><a class="submenu__link" id="21" href="../../api/controllers/products.php?subcategory=21">Encastrables y Apilables</a></li><li class="submenu__item"><a class="submenu__link" id="22" href="../../api/controllers/products.php?subcategory=22">Muñecas y Muñecos</a></li><li class="submenu__item"><a class="submenu__link" id="23" href="../../api/controllers/products.php?subcategory=23">Musicales</a></li><li class="submenu__item"><a class="submenu__link" id="24" href="../../api/controllers/products.php?subcategory=24">Peluches</a></li><li class="submenu__item"><a class="submenu__link" id="25" href="../../api/controllers/products.php?subcategory=25">Primeros Juegos</a></li><li class="submenu__item"><a class="submenu__link" id="26" href="../../api/controllers/products.php?subcategory=26">Sonajeros</a></li><li class="submenu__item"><a class="submenu__link" id="27" href="../../api/controllers/products.php?subcategory=27">Vehículos</a></li></ul></li><li class="menu__item"><a class="menu__link" id="5" href="../../api/controllers/products.php?category=5">Higiene y Cuidado <i class="fas fa-chevron-down" title="Desplegar categoría"></i></a><ul class="submenu"><li class="submenu__item"><a class="submenu__link" id="28" href="../../api/controllers/products.php?subcategory=28">Aspiradores Nasales</a></li><li class="submenu__item"><a class="submenu__link" id="29" href="../../api/controllers/products.php?subcategory=29">Cepillos y Peines</a></li><li class="submenu__item"><a class="submenu__link" id="30" href="../../api/controllers/products.php?subcategory=30">Higiene Bucal</a></li><li class="submenu__item"><a class="submenu__link" id="31" href="../../api/controllers/products.php?subcategory=31">Sets de Higiene</a></li><li class="submenu__item"><a class="submenu__link" id="32" href="../../api/controllers/products.php?subcategory=32">Tijeras</a></li></ul></li><li class="menu__item"><a class="menu__link" id="6" href="../../api/controllers/products.php?category=6">Paseo <i class="fas fa-chevron-down" title="Desplegar categoría"></i></a><ul class="submenu"><li class="submenu__item"><a class="submenu__link" id="33" href="../../api/controllers/products.php?subcategory=33">Cochecitos</a></li><li class="submenu__item"><a class="submenu__link" id="34" href="../../api/controllers/products.php?subcategory=34">Cunas, Catres y Moisés</a></li><li class="submenu__item"><a class="submenu__link" id="35" href="../../api/controllers/products.php?subcategory=35">Huevitos y Sillitas</a></li><li class="submenu__item"><a class="submenu__link" id="36" href="../../api/controllers/products.php?subcategory=36">Mochilas y Porta Bebés </a></li></ul></li><li class="menu__item"><a class="menu__link" id="7" href="../../api/controllers/products.php?category=7">Seguridad <i class="fas fa-chevron-down" title="Desplegar categoría"></i></a><ul class="submenu"><li class="submenu__item"><a class="submenu__link" id="37" href="../../api/controllers/products.php?subcategory=37">Baby Call</a></li><li class="submenu__item"><a class="submenu__link" id="38" href="../../api/controllers/products.php?subcategory=38">Barreras</a></li><li class="submenu__item"><a class="submenu__link" id="39" href="../../api/controllers/products.php?subcategory=39">Espejos Retrovisores</a></li><li class="submenu__item"><a class="submenu__link" id="40" href="../../api/controllers/products.php?subcategory=40">Pisos de Goma</a></li><li class="submenu__item"><a class="submenu__link" id="41" href="../../api/controllers/products.php?subcategory=41">Traba de Puertas</a></li></ul></li><li class="menu__item"><a class="menu__link" id="8" href="../../api/controllers/products.php?category=8">Cuarto <i class="fas fa-chevron-down" title="Desplegar categoría"></i></a><ul class="submenu"><li class="submenu__item"><a class="submenu__link" id="43" href="../../api/controllers/products.php?subcategory=43">Catres</a></li><li class="submenu__item"><a class="submenu__link" id="42" href="../../api/controllers/products.php?subcategory=42">Cunas</a></li><li class="submenu__item"><a class="submenu__link" id="44" href="../../api/controllers/products.php?subcategory=44">Moisés</a></li><li class="submenu__item"><a class="submenu__link" id="45" href="../../api/controllers/products.php?subcategory=45">Multifunción</a></li><li class="submenu__item"><a class="submenu__link" id="46" href="../../api/controllers/products.php?subcategory=46">Nidos de Contensión</a></li><li class="submenu__item"><a class="submenu__link" id="47" href="../../api/controllers/products.php?subcategory=47">Parasoles</a></li></ul></li></ul></nav>
+    <script>
+      const $submenu_show = document.querySelectorAll('.fa-chevron-down');
+      $submenu_show.forEach(item => {
+        item.addEventListener('click', (e) => {
+          e.preventDefault();
+          let $menu_item = e.target.parentElement.parentElement;
+          $menu_item.querySelector('ul').classList.toggle('show-submenu');
+        })
+      })
+    </script>
+</body>
+</html>

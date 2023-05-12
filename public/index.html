@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles/normalize.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <link rel="shortcut icon" href="assets/ico/LOGO-MobileAltBlack-misk-baby.svg" type="image/x-icon" />
+  <title>Misk Baby - Productos para beb&eacute;s</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper wrapper--header">
+      <div class="icon-menu" id="icon-menu" title="Desplegar el menu"><i class="fas fa-bars"></i></div>
+      <!-- <img src="assets/images/LOGO-MobileAlt-misk-baby.svg" alt="Misk Baby" class="header__logo"> -->
+      <a href="index.html" class="header__logo">
+        <picture>
+          <source srcset="assets/images/LOGO-misk-baby.svg" media="(min-width: 768px)">
+          <source srcset="assets/images/LOGO-MobileAlt-misk-baby.svg">
+          <img srcset="assets/images/LOGO-Mobile-misk-baby.svg" alt="Misk Baby">
+        </picture>
+      </a>
+      <div class="header__social"><i class="fab fa-whatsapp"></i><i class="fab fa-facebook-square"></i></div>
+      <div class="header__cart" title="Ver carrito de productos"><span class="header__cart-count"></span><i class="fas fa-shopping-cart"></i></div>
+      <!-- <div class="header__cart"><i class="fas fa-shopping-cart"></i><span id="cart-count" class="header__cart-count">11</span></div> -->
+      <nav class="main-nav" id="main-nav"></nav>
+      <!-- <nav class="header__menu"></nav> -->
+    </div>
+  </header>
+  <aside class="aside">
+    <div class="wrapper wrapper--aside">
+      <ul class="slider">
+        <li id="slide1">Producto1</li>
+        <li id="slide2">Producto2</li>
+        <li id="slide3">Producto3</li>
+        <li id="slide4">Producto4</li>
+        <li id="slide5">Producto5</li>
+     </ul>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="wrapper wrapper--main">
+      <h1 class="main__title">Bienvenidos a MISK BABY</h1>
+      <h2 class="main__subtitle">Tienda de productos para bebés</h2>
+      <p class="main__text">Te acompañamos en el crecimiento del bebé, ofrecemos los mejores productos.</p>
+      <section class="products">
+        <h3 class="products__title" id="products-title"></h3>
+        <div class="wrapper--products" id="products">
+          <template id="product-template">
+            <article class="product">
+              <img class="product__image">
+              <h4 class="product__name"></h4>
+              <p class="product__description"></p>
+              <div class="product__cta">
+                <span class="product__price"></span>
+                <button class="product__cart"><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </article>
+          </template>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrapper wrapper--footer">
+      <small class="footer__text">Copyright &copy; 2000-2021<br>Todos los derechos reservados.</small>
+      <a class="footer__link" href="https://api.whatsapp.com/send?phone=+5491121767860&amp;text=Hola%2C%20quer%C3%ADa%20hacer%20una%20consultar%20%0A" target="_blank" title="Consultar sobre nuestros productos"><i class="fab fa-whatsapp"></i>Contactanos</a>
+    </div>
+  </footer>
+  </div>
+  <script src="assets/scripts/scripts.js"></script>
+</body>
+
+</html>
